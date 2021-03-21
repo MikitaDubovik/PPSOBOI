@@ -1,0 +1,16 @@
+{
+  "generatedBy": "Microsoft.NET.Sdk.Functions-3.0.3",
+  "configurationSource": "attributes",
+  "bindings": [
+    {
+      "type": "serviceBusTrigger",
+      "connection": "queueConnection",
+      "queueName": "dataqueue",
+      "isSessionsEnabled": false,
+      "name": "myQueueItem"
+    }
+  ],
+  "disabled": false,
+  "scriptFile": "../bin/ComputeFunc.dll",
+  "entryPoint": "ComputeFunc.ServiceBusFunc.Run"
+}

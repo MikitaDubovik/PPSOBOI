@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2021-03-20T19:52:12.8523552Z"
+    },
+    "appInsights1": {
+      "restored": true,
+      "restoreTime": "2021-03-20T19:52:41.6462948Z"
+    }
+  },
+  "parameters": {
+    "appInsights1.subscriptionId": {
+      "Type": "subscription",
+      "Value": "7dfeae5c-98cf-465e-91be-f6eaf80d154e"
+    },
+    "appInsights1.resourceGroupName": {
+      "Type": "resourceGroup",
+      "Value": "ppsoboi"
+    },
+    "mssql1.subscriptionId": {
+      "Type": "subscription",
+      "Value": "7dfeae5c-98cf-465e-91be-f6eaf80d154e"
+    },
+    "mssql1.resourceGroupName": {
+      "Type": "resourceGroup",
+      "Value": "ppsoboi"
+    }
+  }
+}

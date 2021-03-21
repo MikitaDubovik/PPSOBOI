@@ -1,0 +1,15 @@
+﻿@using MvcPL.Models.Pagination
+@model MvcPL.Models.Pagination.PaginationViewModel<MvcPL.Models.PostViewModel>
+
+@if (Model.PageInfo.TotalPages != Model.PageInfo.PageNumber)
+{
+    using (Html.BeginForm("Search", "Posts", new
+    {
+        tag = ((PostPageInfo)Model.PageInfo).Tag,
+        page = Model.PageInfo.PageNumber + 1
+    }, FormMethod.Post, new { @class = "", id = "loadMoreForm" }))
+    {
+        @Html.AntiForgeryToken()
+        <button class="btn my-2 my-sm-0 signUpButton" id="buttonLoadMore" type="submit">Load more</button>
+    }
+}

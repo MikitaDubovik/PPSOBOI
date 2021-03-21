@@ -1,0 +1,9 @@
+C:\Users\Mikita\source\repos\STOEI\Course\BLL.Interface\bin\Release\BLL.Interface.dll
+C:\Users\Mikita\source\repos\STOEI\Course\BLL.Interface\bin\Release\BLL.Interface.pdb
+C:\Users\Mikita\source\repos\STOEI\Course\BLL.Interface\bin\Release\DAL.Interface.dll
+C:\Users\Mikita\source\repos\STOEI\Course\BLL.Interface\bin\Release\DAL.Interface.pdb
+C:\Users\Mikita\source\repos\STOEI\Course\BLL.Interface\obj\Release\BLL.Interface.csprojAssemblyReference.cache
+C:\Users\Mikita\source\repos\STOEI\Course\BLL.Interface\obj\Release\BLL.Interface.csproj.CoreCompileInputs.cache
+C:\Users\Mikita\source\repos\STOEI\Course\BLL.Interface\obj\Release\BLL.Interface.csproj.CopyComplete
+C:\Users\Mikita\source\repos\STOEI\Course\BLL.Interface\obj\Release\BLL.Interface.dll
+C:\Users\Mikita\source\repos\STOEI\Course\BLL.Interface\obj\Release\BLL.Interface.pdb

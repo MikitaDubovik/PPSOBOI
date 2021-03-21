@@ -1,0 +1,8 @@
+﻿@model MvcPL.Models.PostRatingViewModel
+
+<div style="height: 5px"></div>
+<a href="@Url.Action("DislikePost", "Posts", new {
+             postId = Model.Id})" id="dislike" class="rat">
+    <i class="icon ion-android-favorite redColor" style="font-size: 24px;"></i>
+</a>
+<span class="align-text-bottom">@Model.NumberOfLikes</span>

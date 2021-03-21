@@ -1,0 +1,17 @@
+﻿@model MvcPL.Models.Pagination.PaginationViewModel<MvcPL.Models.PostViewModel>
+
+@foreach (var p in Model.Items)
+{
+    <div id="image" class="col-lg-4 col-md-6 col-sm-12 col-12">
+        <a href="@Url.Action("DeletePost", "Profile", new { postId = p.Id })" class="fancybox-close-small" title="Delete"></a>
+
+        <a href="@Url.Action("ShowImage", "Posts", new {p.Id})" data-type="image" data-fancybox="images">
+            <img src="@Url.Action("ShowImage", "Posts", new {p.Id})" class="viewImage" />
+        </a>
+
+        <div>
+            <a data-fancybox data-type="ajax" data-src="@Url.Action("PostDetails", "Posts", new {p.Id})"
+               href="@Url.Action("PostDetails", "Posts", new {p.Id})" class="viewDetails">View Details</a>
+        </div>
+    </div>
+}

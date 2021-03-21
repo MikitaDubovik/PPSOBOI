@@ -1,0 +1,388 @@
+﻿a:hover {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.logo {
+    color: white;
+    font-family: Comic Sans MS;
+    font-style: italic;
+    font-size: 27px;
+    padding: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 8%;
+    margin-left: 20%;
+}
+
+.right {
+    float: right;
+    overflow: hidden;
+    /*margin-right: 5px;
+    padding-right: 5px;*/
+}
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+.ui-autocomplete {
+    max-height: 100px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+}
+/* IE 6 doesn't support max-height
+   * we use height instead, but this forces the menu to always be this tall
+   */
+* html .ui-autocomplete {
+    height: 100px;
+}
+
+.images {
+    margin: auto;
+    margin-top: 50px;
+    overflow: hidden;
+    min-width: 440px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    /*height: 100%;*/
+}
+
+.emptySearch {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    color: dimgrey;
+}
+
+#image {
+    float: left;
+    padding-bottom: 30px;
+    text-align: center;
+    opacity: 1;
+}
+
+    #image:hover {
+        opacity: 0.7;
+    }
+
+.image {
+    float: left;
+    padding-bottom: 30px;
+    text-align: center;
+    opacity: 1;
+}
+
+    .image:hover {
+        opacity: 0.7;
+    }
+
+.appearence {
+    display: none;
+}
+
+#loadMore {
+    margin-left: 15px;
+    margin-right: 15px;
+    clear: both;
+    text-align: center;
+}
+
+.green-button {
+    color: #28a745;
+    border-color: #28a745 !important;
+    background-image: none;
+    background-color: transparent;
+}
+
+    .green-button:hover {
+        background-color: #2dcb74;
+        border-color: #2dcb74 !important;
+        color: white;
+    }
+
+#tag {
+    padding-right: 150px;
+}
+
+.signInButton {
+    margin-left: 5px;
+    margin-right: 15px;
+    background-color: #28a745;
+    color: white;
+    -webkit-appearance: none !important;
+    /*color: #28a785;
+    border: 1px solid #28a785 !important;
+    background-color: transparent;
+    background-image: none;*/
+}
+
+    .signInButton:hover {
+        background-color: #1e7e34 !important;
+        color: white !important;
+    }
+
+.signUpButton {
+    /*color: #a7288a;
+    border: 1px solid #a7288a !important;
+    background-color: transparent;
+    background-image: none;*/
+    -webkit-appearance: none !important;
+    background-color: #28a745;
+    color: white;
+}
+
+.signInButtonForm {
+    margin-top: 30px;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    -webkit-appearance: none !important;
+    background-color: #28a745;
+    color: white;
+}
+
+    .signInButtonForm:hover {
+        background-color: #1e7e34 !important;
+        color: white !important;
+    }
+
+.signUpButton:hover {
+    /*background-color: #a7288a;
+    color: white;*/
+    background-color: #1e7e34 !important;
+    color: white !important;
+}
+
+.registerForm {
+    padding: 24px;
+    width: 350px;
+}
+
+.loginForm {
+    padding: 24px;
+    width: 330px;
+}
+
+.center {
+    text-align: center;
+}
+
+.signUpContainer {
+    margin: auto;
+    width: 350px;
+    margin-top: 60px;
+    border: 5px solid #f8f9fa;
+    border-radius: 10px;
+}
+
+.container-profile {
+    margin-top: 50px;
+    width: 1000px !important;
+    overflow: hidden;
+}
+
+.profilePhoto {
+    float: left;
+}
+
+.personalInfo {
+    padding-top: 50px;
+    float: left;
+    color: #696969;
+    font-family: Arial;
+}
+
+.profileButtons {
+    float: right;
+}
+
+.editProfile {
+    margin-top: 15px;
+}
+
+.uploadPhoto {
+    margin-top: 15px;
+}
+
+.makeAd {
+    margin-top: 15px;
+}
+
+.loginProfile {
+    font-size: 30px;
+}
+
+#ImageFile {
+    display: none;
+}
+
+.container-photo {
+    margin-top: 50px;
+    overflow: hidden;
+    width: 900px !important;
+    text-align: center;
+}
+
+.uploadLabel {
+    text-align: left !important;
+    padding-left: 0px !important;
+}
+
+.uploadField {
+    float: right;
+}
+
+.labelCurrentPhoto {
+    margin: 6px;
+}
+
+.currentPhoto {
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.imageDetails {
+    float: left;
+}
+
+.infoDetails {
+    padding-left: 24px;
+    overflow: hidden;
+    height: 580px;
+    width: 300px;
+    margin-right: 24px;
+}
+
+.ownerDetails {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    /*border-bottom: 1px solid #efefef;*/
+}
+
+.ownerName {
+    margin: auto;
+    margin-left: 12px;
+    margin-right: 0px;
+}
+
+.photoDetails {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #efefef;
+}
+
+.fade {
+    opacity: 1 !important;
+    padding: 5px !important;
+}
+
+.dateUpload {
+    color: #999;
+    font-size: 14px;
+    letter-spacing: .2px;
+}
+
+.addionalInfo {
+    padding-bottom: 10px;
+    /*border-bottom: 1px solid #efefef;*/
+    padding-top: 5px;
+    border-top: 1px solid #efefef;
+}
+
+.redColor {
+    color: red !important;
+}
+
+#like {
+    -webkit-appearance: none;
+}
+
+.viewDetails {
+    color: #D3D3D3;
+}
+
+#addComment {
+    font-size: 14px;
+    color: #808080;
+    display: block;
+    padding: 0.5rem 0.75rem;
+    line-height: 1.25;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    margin-right: 10px !important;
+    float: left;
+}
+
+.comments {
+    margin-top: 5px;
+    height: 250px;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-size: 15px;
+}
+
+.commentAuthor-name {
+    font-weight: 600;
+}
+
+.loadMoreComment {
+    color: #999 !important;
+}
+
+    .loadMoreComment:hover {
+        color: #999 !important;
+    }
+
+.noComment {
+    color: #999 !important;
+}
+
+.container-profile-down {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 5px;
+    padding-top: 30px;
+    border-radius: 15px;
+}
+
+.viewImage {
+    display: block;
+    height: 350px;
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.container-body {
+    margin-bottom: 50px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.activeLink {
+    background-color: #28a745;
+}
+
+select {
+    overflow-y: hidden !important;
+}
+
+.shadow {
+    background: #28a745; /* Цвет фона */
+    box-shadow: 0 5px 10px; /* Параметры тени */
+    padding: 5px;
+}

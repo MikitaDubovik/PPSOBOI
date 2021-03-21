@@ -1,0 +1,25 @@
+﻿@model MvcPL.Models.Pagination.PaginationViewModel<MvcPL.Models.CommentViewModel>
+@{
+    bool emptySearch = Model.PageInfo.TotalItems == 0 || (!Model.Items.Any());
+}
+@if (emptySearch)
+{
+    <div class="noComment">There are no comments yet</div>
+}
+else
+{
+    if (Model.PageInfo.TotalPages != Model.PageInfo.PageNumber)
+    {
+        <a href="@Url.Action("LoadMoreComment", "Posts")" id="loadMoreComment" class="loadMoreComment" page="@Model.PageInfo.PageNumber">
+            Load more comments
+        </a>
+    }
+    foreach (var comment in Model.Items.Reverse())
+    {
+        <div id="comment">
+            <span class="commentAuthor-name">@comment.Author.Name </span>
+            <span>@comment.Text</span>
+        </div>
+    }
+}
+

@@ -1,0 +1,20 @@
+﻿@model MvcPL.Models.Pagination.PaginationViewModel<MvcPL.Models.ImageViewModel>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    bool emptySearch = Model.PageInfo.TotalItems == 0 || (!Model.Items.Any());
+}
+
+@section SearchForm
+{
+    @Html.Partial("_SearchForm")
+}
+
+@section body{
+    <div class="container container-body">
+        
+        @Html.Partial("_ImageGallery", Model)
+    </div>
+}
+

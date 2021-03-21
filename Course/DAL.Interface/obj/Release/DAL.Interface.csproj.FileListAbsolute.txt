@@ -1,0 +1,6 @@
+C:\Users\Mikita\source\repos\STOEI\Course\DAL.Interface\bin\Release\DAL.Interface.dll
+C:\Users\Mikita\source\repos\STOEI\Course\DAL.Interface\bin\Release\DAL.Interface.pdb
+C:\Users\Mikita\source\repos\STOEI\Course\DAL.Interface\obj\Release\DAL.Interface.csprojAssemblyReference.cache
+C:\Users\Mikita\source\repos\STOEI\Course\DAL.Interface\obj\Release\DAL.Interface.csproj.CoreCompileInputs.cache
+C:\Users\Mikita\source\repos\STOEI\Course\DAL.Interface\obj\Release\DAL.Interface.dll
+C:\Users\Mikita\source\repos\STOEI\Course\DAL.Interface\obj\Release\DAL.Interface.pdb

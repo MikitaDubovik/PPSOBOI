@@ -1,0 +1,16 @@
+﻿@model MvcPL.Models.PostDetailsViewModel
+
+@{
+    ViewBag.Title = "PostDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section SearchForm
+{
+    @Html.Partial("_SearchFormAuthRedirectToHome")
+}
+
+@section body{
+  @Html.Partial("_PostDetails")  
+}
+

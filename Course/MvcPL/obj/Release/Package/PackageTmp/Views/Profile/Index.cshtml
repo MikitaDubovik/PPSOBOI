@@ -1,0 +1,89 @@
+﻿@using System.Web.Optimization
+@using MvcPL.Models
+@using MvcPL.Models.Pagination
+@model MvcPL.Models.ProfileViewModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var photos = (PaginationViewModel<PostViewModel>)ViewBag.Posts;
+    bool emptySearch = photos.PageInfo.TotalItems == 0 || (!photos.Items.Any());
+}
+
+
+
+@section SearchForm
+{
+    @Html.Partial("_SearchFormAuthRedirectToHome")
+}
+
+@section profile
+{
+    <div class="container container-profile">
+        <div class="profilePhoto col-lg-4 col-md-4">
+            @if (Model.ProfilePost == null || Model.ProfilePost.Length == 0)
+            {
+                <img src="~/Content/default_photo.jpg" height="200px" width="auto" style="border-radius:10px">
+            }
+            else
+            {
+                <img src="@Url.Action("ShowImage","Profile")" height="200px" width="auto" style="border-radius:10px">
+            }
+        </div>
+        <div class="personalInfo col-lg-4 col-md-4">
+            <div class="loginProfile">
+                @Model.Login
+            </div>
+            @if (!string.IsNullOrEmpty(Model.Name))
+            {
+                <h5>@Model.Name</h5>
+            }
+        </div>
+
+        <div class="profileButtons col-lg-4 col-md-4">
+            <div class="col-lg-12 col-md-12 editProfile">
+                <a href="@Url.Action("EditProfile", "Profile")" class="btn ml-auto my-2 my-sm-0 signUpButton" style="width: 150px"
+                   type="submit">Edit Profile</a>
+            </div>
+            <div class="col-lg-12 col-md-12 uploadPhoto">
+                <a href="@Url.Action("UploadPost", "Profile")" class="btn ml-auto my-2 my-sm-0 signUpButton" style="width: 150px"
+                   type="submit">Upload Post</a>
+            </div>
+            <div class="col-lg-12 col-md-12 makeAd">
+                <a href="@Url.Action("MakeAd", "Pay")" class="btn ml-auto my-2 my-sm-0 signUpButton" style="width: 150px"
+                   type="submit">Make advertising</a>
+            </div>
+            @if (User.IsInRole("Manager"))
+            {
+                <div class="col-lg-12 col-md-12 makeAd">
+                    <a href="@Url.Action("Management", "Pay")" class="btn ml-auto my-2 my-sm-0 signUpButton" style="width: 150px"
+                       type="submit">Management</a>
+                </div>
+            }
+        </div>
+
+    </div>
+
+    <div class="container container-profile-down">
+        <div class="userPosts" id="userPosts" style="overflow: hidden">
+            @if (emptySearch)
+            {
+                <div class="emptySearch">Upload your first photo</div>
+            }
+            else
+            {
+                @Html.Partial("_FoundImages", (PaginationViewModel<PostViewModel>)ViewBag.Posts)
+            }
+        </div>
+        <div class="loadMore" id="loadMore">
+            @if (!emptySearch)
+            {
+                @Html.Partial("_ProfilePosts", (PaginationViewModel<PostViewModel>)ViewBag.Posts)
+            }
+        </div>
+    </div>
+}
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/profile")
+}

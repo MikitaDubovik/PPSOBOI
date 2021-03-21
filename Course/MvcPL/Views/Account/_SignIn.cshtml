@@ -1,0 +1,34 @@
+﻿@using System.Web.Optimization
+@model MvcPL.Models.SignInViewModel
+
+<div class="loginForm">
+    
+    @using (Html.BeginForm("SignIn", "Account", new {returnUrl = ViewBag.ReturnUrl}, FormMethod.Post,
+        new {id = "SignInForm"}))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new {@class = "text-danger"})
+        <div class="form-group">
+            @Html.LabelFor(m => m.Login, new {@class = "", id = "loginLabel"})
+            <div class="col-md-10">
+                @Html.TextBoxFor(m => m.Login, new {@class = "form-control", placeholder = "Login"})
+                @Html.ValidationMessageFor(m => m.Login, null, new {@class = "text-danger"})
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(m => m.Password, new {@class = ""})
+            <div class="col-md-10">
+                @Html.PasswordFor(m => m.Password, new {@class = "form-control", placeholder = "Password"})
+                @Html.ValidationMessageFor(m => m.Password, null, new {@class = "text-danger"})
+            </div>
+        </div>
+        <div class="form-group center">
+            <div class="center">
+                <input type="submit" id="signInButtonForm" class="btn btn-default signInButtonForm" value="Sign In"/>
+            </div>
+        </div>
+    }
+</div>
+
+@Scripts.Render("~/bundles/jqueryOnly")
+@Scripts.Render("~/bundles/jqueryval")

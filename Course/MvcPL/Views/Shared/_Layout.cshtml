@@ -1,0 +1,31 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/themes/base/css")
+    @Styles.Render("~/Content/css")
+
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
+        <a href="@Url.Action("Index", "Posts")" class="logo">
+            Instasun
+        </a>
+        @RenderSection("SearchForm", required: false)
+    </nav>
+
+    @RenderSection("Profile", required: false)
+    @RenderSection("Body", required: false)
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/search")
+    @RenderBody()
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+C:\Users\Mikita\Source\Repos\STOEI\Course\ORM\bin\Debug\ORM.dll.config
+C:\Users\Mikita\Source\Repos\STOEI\Course\ORM\bin\Debug\ORM.dll
+C:\Users\Mikita\Source\Repos\STOEI\Course\ORM\bin\Debug\ORM.pdb
+C:\Users\Mikita\Source\Repos\STOEI\Course\ORM\bin\Debug\EntityFramework.dll
+C:\Users\Mikita\Source\Repos\STOEI\Course\ORM\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mikita\Source\Repos\STOEI\Course\ORM\bin\Debug\EntityFramework.xml
+C:\Users\Mikita\Source\Repos\STOEI\Course\ORM\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mikita\Source\Repos\STOEI\Course\ORM\obj\Debug\ORM.csprojAssemblyReference.cache
+C:\Users\Mikita\Source\Repos\STOEI\Course\ORM\obj\Debug\ORM.csproj.CoreCompileInputs.cache
+C:\Users\Mikita\Source\Repos\STOEI\Course\ORM\obj\Debug\ORM.csproj.CopyComplete
+C:\Users\Mikita\Source\Repos\STOEI\Course\ORM\obj\Debug\ORM.dll
+C:\Users\Mikita\Source\Repos\STOEI\Course\ORM\obj\Debug\ORM.pdb
+C:\Users\Mikita\source\repos\STOEI\Course\ORM\obj\Debug\ORM.Migrations.Initial.resources
+C:\Users\Mikita\source\repos\STOEI\Course\ORM\obj\Debug\ORM.csproj.GenerateResource.cache

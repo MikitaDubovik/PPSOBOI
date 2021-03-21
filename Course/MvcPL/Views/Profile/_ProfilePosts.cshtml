@@ -1,0 +1,12 @@
+﻿@model MvcPL.Models.Pagination.PaginationViewModel<MvcPL.Models.PostViewModel>
+@{
+    bool emptySearch = Model.PageInfo.TotalItems == 0 || (!Model.Items.Any());
+}
+
+
+@if (Model.PageInfo.TotalPages != Model.PageInfo.PageNumber)
+{
+    <a href="@Url.Action("LoadMorePosts", "Profile")" id="loadMorePosts" class="loadMorePosts btn signUpButton" page="@Model.PageInfo.PageNumber">
+        Load more
+    </a>
+}

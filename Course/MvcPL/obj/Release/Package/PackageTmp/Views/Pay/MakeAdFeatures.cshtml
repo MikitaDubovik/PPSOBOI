@@ -1,0 +1,67 @@
+﻿@using System.Web.Optimization
+@model MvcPL.Models.UploadAdViewModel
+@{
+    ViewBag.Title = "UploadPost";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section SearchForm
+{
+    @Html.Partial("_SearchFormAuthRedirectToHome")
+}
+
+@section body
+{
+    <div id="Container" class="container container-photo">
+        <div class="form-group row justify-content-center">
+            <label class="col-form-label uploadLabel">If nothing is selected that means that all variants can include.</label>
+        </div>
+        <div class="form-group row justify-content-center">
+            @Html.LabelFor(m => m.Countries, new { @class = "col-form-label uploadLabel col-md-1" })
+            <div class="col-md-3">
+                @Html.DropDownList("DdlCountries", (SelectList)ViewBag.Countries, new { multiple = "multiple", style = "height:100%; width: 60%;" })
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-center">
+            @Html.LabelFor(m => m.Sex, new { @class = "col-form-label uploadLabel col-md-1" })
+            <div class="col-md-3">
+                @Html.DropDownList("DdlSex", (SelectList)ViewBag.Sex, new { multiple = "multiple", style = "height:75%; width: 60%;" })
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-center">
+            @Html.LabelFor(m => m.Age, new { @class = "col-form-label uploadLabel col-md-1" })
+            <div class="col-md-3">
+                @Html.DropDownList("DdlAge", (SelectList)ViewBag.AgeBegin, new { style = "height:100%; width: 60%;" })
+            </div>
+        </div>
+        <div class="form-group row justify-content-center">
+            @Html.LabelFor(m => m.Language, new { @class = "col-form-label uploadLabel col-md-1" })
+            <div class="col-md-3">
+                @Html.DropDownList("DdlLanguage", (SelectList)ViewBag.Languages, new { multiple = "multiple", style = "height:125%; width: 60%;" })
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-center">
+            <div class="col-form-label uploadLabel" style="margin-top: 3%">
+                <label id="beginPrice">Total price - <label id="endPrice"></label></label>
+            </div>
+        </div>
+
+        <div class="form-group row justify-content-center">
+            <input type="button" class="btn signUpButton" id="CalculateButton" value="Calculate"
+                   style="margin-top: 16px">
+        </div>
+
+        <div class="form-group row justify-content-center">
+            <a href="@Url.Action("PayPage", "Pay")" class="btn signUpButton" id="PayButton" style="margin-top: 16px"
+               type="submit">Pay</a>
+        </div>
+    </div>
+}
+
+@section scripts
+{
+    @Scripts.Render("~/bundles/createAd")
+}

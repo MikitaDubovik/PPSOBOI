@@ -1,0 +1,43 @@
+﻿@model MvcPL.Models.AdsAggregatorViewModel
+
+@{
+    ViewBag.Title = "Management";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section SearchForm
+{
+    @Html.Partial("_SearchFormAuthRedirectToHome")
+}
+
+<div id="Container" class="container container-photo">
+    <h2>Management</h2>
+</div>
+
+<br />
+
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Email</th>
+            <th>Post ID</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var viewModel in Model.ViewModels)
+        {
+            <tr>
+                <td>
+                    @viewModel.UserEmail
+                </td>
+                <td>
+                    @viewModel.PostId
+                </td>
+                <td>
+                    @viewModel.Price
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

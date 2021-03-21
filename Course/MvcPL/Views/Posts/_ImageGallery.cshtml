@@ -1,0 +1,59 @@
+﻿@model MvcPL.Models.Pagination.PaginationViewModel<MvcPL.Models.ImageViewModel>
+@{
+    int i = 1;
+}
+
+<div class="images" id="images">
+    @foreach (var p in Model.Items)
+    {
+        if (p.IsAd)
+        {
+            <div id="image-@i" class="col-lg-4 col-md-6 col-sm-12 col-12 image" style="padding-bottom: 0px !important">
+                <a href="@Url.Action("DeleteAddPost", "Posts", new {postUrl = p.ImageUrl})" class="fancybox-close-small" title="Delete"></a>
+                <div class="shadow">
+                    <a id="fullsize-@i" href="@p.ImageUrl" data-type="image" data-fancybox="images">
+                        <img id="img-@i" src="@p.ImageUrl" class="viewImage" />
+                    </a>
+                </div>
+                <div>
+                    <a id="details-@i" data-fancybox data-type="ajax" data-src="@p.ImageDetailsUrl"
+                       href="@p.ImageDetailsUrl" class="viewDetails">View Details</a>
+                </div>
+            </div>
+        }
+        else
+        {
+            <div id="image-@i" class="col-lg-4 col-md-6 col-sm-12 col-12 image">
+
+                <a id="fullsize-@i" href="@p.ImageUrl" data-type="image" data-fancybox="images">
+                    <img id="img-@i" src="@p.ImageUrl" class="viewImage" />
+                </a>
+
+                <div>
+                    <a id="details-@i" data-fancybox data-type="ajax" data-src="@p.ImageDetailsUrl"
+                       href="@p.ImageDetailsUrl" class="viewDetails">View Details</a>
+                </div>
+
+            </div>
+        }
+        i++;
+    }
+</div>
+<div id="listOfPages" style="text-align: center">
+
+    @{
+        int j;
+    }
+
+    @for (j = 0; j < Model.PageInfo.TotalPages && j < 5; j++)
+    {
+        <a id="page@(j + 1)" href="#" onclick="GetImages('@Model.PageInfo.UrlPart', @(j + 1))">
+            @(j + 1)
+        </a>
+    }
+    @while (j < 5)
+    {
+        <a id="page@(j + 1)" href="#" onclick="" class="hide"></a>
+        j++;
+    }
+</div>
