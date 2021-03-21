@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30611.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComputeFunc", "ComputeFunc\ComputeFunc.csproj", "{B3D164A1-F913-43D8-9310-6CE30DF75276}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3D164A1-F913-43D8-9310-6CE30DF75276}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3D164A1-F913-43D8-9310-6CE30DF75276}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3D164A1-F913-43D8-9310-6CE30DF75276}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3D164A1-F913-43D8-9310-6CE30DF75276}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84896DB8-A981-4BE7-A449-4907D7AA3621}
+	EndGlobalSection
+EndGlobal

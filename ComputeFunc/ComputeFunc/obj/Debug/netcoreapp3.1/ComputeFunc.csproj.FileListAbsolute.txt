@@ -88,3 +88,5 @@ C:\Users\Mikita\source\repos\ComputeFunc\ComputeFunc\bin\Debug\netcoreapp3.1\bin
 C:\Users\Mikita\source\repos\ComputeFunc\ComputeFunc\bin\Debug\netcoreapp3.1\bin\runtimes\win-x64\native\Cosmos.CRTCompat.dll
 C:\Users\Mikita\source\repos\ComputeFunc\ComputeFunc\bin\Debug\netcoreapp3.1\bin\runtimes\win-x64\native\Microsoft.Azure.Cosmos.ServiceInterop.dll
 C:\Users\Mikita\source\repos\ComputeFunc\ComputeFunc\bin\Debug\netcoreapp3.1\bin\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Mikita\source\repos\ComputeFunc\ComputeFunc\bin\Debug\netcoreapp3.1\bin\Microsoft.Azure.WebJobs.Extensions.Storage.dll
+C:\Users\Mikita\source\repos\ComputeFunc\ComputeFunc\obj\Debug\netcoreapp3.1\ComputeFunc.csproj.CoreCompileInputs.cache

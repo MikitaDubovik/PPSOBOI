@@ -1,5 +1,5 @@
 {
-    "IsEncrypted": false,
+  "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=mikstoragepps;AccountKey=rjd0A8f04Rad/8tWPpp4ZZPatqU3FEGy76XVeDyRnrq2PcvucvbURyQ0Jovxc4yWAGSswhkt5Mpn364BnFMFcQ==;BlobEndpoint=https://mikstoragepps.blob.core.windows.net/;TableEndpoint=https://mikstoragepps.table.core.windows.net/;QueueEndpoint=https://mikstoragepps.queue.core.windows.net/;FileEndpoint=https://mikstoragepps.file.core.windows.net/",
     "FUNCTIONS_WORKER_RUNTIME": "dotnet",
