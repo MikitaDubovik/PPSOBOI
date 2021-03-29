@@ -9,6 +9,6 @@ namespace BLL.Interface.Services
 {
     public interface IServiceBusConnector
     {
-        Task SendImage(BllPost post);
+        Task<bool> SendImage(BllPost post, int number = 1);
     }
 }
