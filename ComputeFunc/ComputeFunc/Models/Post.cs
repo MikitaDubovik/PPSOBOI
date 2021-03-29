@@ -7,13 +7,13 @@ namespace ComputeFunc.Models
     {
         public string id { get; set; }
 
-        public int PostId { get; set; }
+        public int? PostId { get; set; }
 
         public string Name { get; set; }
 
         public string Description { get; set; }
 
-        public int NumberOfLikes { get; set; }
+        public int? NumberOfLikes { get; set; }
 
         public DateTime UploadDate { get; set; }
 

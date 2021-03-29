@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Er5UW3m4uVztIhvjuzdnC1NhcA8sbCRvQ2CEm9nq6hzbg3id1WXYINDN90ujGvLMkkrwfSJS6qoQqBefz8NH8w==",
+  "dgSpecHash": "EnGu4g1eeZ82DpTYso52EYf03ey60JtOK63UPKNGuty7Cwk9skXfdd+vsjxFcjhVKhSSkX8ATeV/4s3qWgIlqw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mikita\\source\\repos\\ComputeFunc\\ComputeFunc\\ComputeFunc.csproj",
+  "projectFilePath": "C:\\Users\\Mikita\\Desktop\\3_Sem\\ППСОБОИ\\PPSOBOI\\ComputeFunc\\ComputeFunc\\ComputeFunc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mikita\\.nuget\\packages\\azure.core\\1.3.0\\azure.core.1.3.0.nupkg.sha512",
     "C:\\Users\\Mikita\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.4\\microsoft.aspnet.webapi.client.5.2.4.nupkg.sha512",

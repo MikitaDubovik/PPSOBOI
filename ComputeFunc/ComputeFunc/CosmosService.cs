@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using ComputeFunc.Models;
 using Microsoft.Azure.Cosmos;
@@ -24,6 +25,8 @@ namespace ComputeFunc
         // The name of the database and container we will create
         private static string databaseId = "Post";
         private static string containerId = "PostContainer";
+
+        private static readonly int coefficient = 2;
 
         static CosmosService()
         {
@@ -59,31 +62,53 @@ namespace ComputeFunc
         }
 
         /// <summary>
+        /// First call to service will call constructor
+        /// </summary>
+        public static void SetUp()
+        {
+
+        }
+
+        /// <summary>
         /// Add Post item to the container
         /// </summary>
-        public static async Task AddItemToContainerAsync(Post post)
+        public static async Task<string> AddItemToContainerAsync(Post post)
         {
             // Create an item in the container.
-            post.id = Guid.NewGuid().ToString();
+            post.id = Guid.NewGuid().ToString().Split("-")[0] + post.PostId.Value;
 
-            var response = await container.CreateItemAsync<Post>(post, new PartitionKey(post.PostId));
+            var response = await container.CreateItemAsync<Post>(post, new PartitionKey(post.PostId.Value));
 
-            // Note that after creating the item, we can access the body of the item with the Resource property off the ItemResponse. We can also access the RequestCharge property to see the amount of RUs consumed on this request.
             Console.WriteLine("Created item in database with id: {0} Operation consumed {1} RUs.\n", response.Resource.PostId, response.RequestCharge);
 
+            return post.id;
         }
 
         /// <summary>
         /// Delete an item in the container
         /// </summary>
-        public static async Task DeleteItemAsync()
+        public static async Task DeleteItemAsync(string itemId, string partitionKeyValue)
         {
-            var partitionKeyValue = "Wakefield";
-            var familyId = "Wakefield.7";
+            try
+            {
+                // Delete an item. Note we must provide the partition key value and id of the item to delete
+                var wakefieldFamilyResponse = await container.DeleteItemAsync<Post>(partitionKeyValue, new PartitionKey(partitionKeyValue));
+                Console.WriteLine("Deleted item [{0},{1}]\n", partitionKeyValue, itemId);
+            }
+            catch (Exception ex)
+            {
 
-            // Delete an item. Note we must provide the partition key value and id of the item to delete
-            var wakefieldFamilyResponse = await container.DeleteItemAsync<Post>(familyId, new PartitionKey(partitionKeyValue));
-            Console.WriteLine("Deleted Family [{0},{1}]\n", partitionKeyValue, familyId);
+            }
         }
+
+        public static async Task PreprocessItemAsync(Post post)
+        {
+            Calculate(float.Parse(post.Price));
+        }
+
+        private static float Calculate(float price) => price * coefficient;
+
+        private static string UpdateName(string name) => name += "#Cont";
+
     }
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mikita\\source\\repos\\ComputeFunc\\ComputeFunc\\ComputeFunc.csproj": {}
+    "C:\\Users\\Mikita\\Desktop\\3_Sem\\ППСОБОИ\\PPSOBOI\\ComputeFunc\\ComputeFunc\\ComputeFunc.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mikita\\source\\repos\\ComputeFunc\\ComputeFunc\\ComputeFunc.csproj": {
+    "C:\\Users\\Mikita\\Desktop\\3_Sem\\ППСОБОИ\\PPSOBOI\\ComputeFunc\\ComputeFunc\\ComputeFunc.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mikita\\source\\repos\\ComputeFunc\\ComputeFunc\\ComputeFunc.csproj",
+        "projectUniqueName": "C:\\Users\\Mikita\\Desktop\\3_Sem\\ППСОБОИ\\PPSOBOI\\ComputeFunc\\ComputeFunc\\ComputeFunc.csproj",
         "projectName": "ComputeFunc",
-        "projectPath": "C:\\Users\\Mikita\\source\\repos\\ComputeFunc\\ComputeFunc\\ComputeFunc.csproj",
+        "projectPath": "C:\\Users\\Mikita\\Desktop\\3_Sem\\ППСОБОИ\\PPSOBOI\\ComputeFunc\\ComputeFunc\\ComputeFunc.csproj",
         "packagesPath": "C:\\Users\\Mikita\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mikita\\source\\repos\\ComputeFunc\\ComputeFunc\\obj\\",
+        "outputPath": "C:\\Users\\Mikita\\Desktop\\3_Sem\\ППСОБОИ\\PPSOBOI\\ComputeFunc\\ComputeFunc\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder"
